@@ -13,6 +13,7 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       white: colors.white,
+      milk: { DEFAULT: '#F9F9F9' },
       black: colors.black,
       gray: colors.gray, // blueGray, coolGray, gray, trueGray, warmGray
       red: colors.red,
@@ -26,6 +27,7 @@ module.exports = {
       cyan: colors.cyan,
       sky: colors.lightBlue,
       blue: colors.blue,
+      saphire: { DEFAULT: '#28536B' },
       indigo: colors.indigo,
       violet: colors.violet,
       purple: colors.purple,
@@ -38,6 +40,7 @@ module.exports = {
         mono: ['Fira Code var', ...defaultTheme.fontFamily.mono],
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         serif: ['Literata var', ...defaultTheme.fontFamily.serif],
+        title: ['PoiretOne-Regular'],
       },
     },
   },

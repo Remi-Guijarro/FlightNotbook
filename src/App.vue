@@ -1,17 +1,22 @@
 <template>
-    <router-view></router-view>
+    <router-view class="h-screen lg:h-screen"></router-view>
 </template>
 
 <style>
     @font-face {
         font-family: 'Inter var';
-        font-style: normal;
         font-weight: 100 900;
         font-display: swap;
+        font-style: oblique 0deg 10deg;
         src: url('/fonts/Inter.var.woff2') format('woff2');
-        unicode-range: U+0000-007F, U+00A0-0100, U+0131, U+0152-0154,
-            U+02BB-02BD, U+02C6, U+02DA, U+02DC, U+2000-200C, U+2010-2028,
-            U+202F-2060, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+FEFF;
+    }
+
+    @font-face {
+        font-family: 'PoiretOne-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-display: auto;
+        src: url('/fonts/PoiretOne-Regular.ttf') format('truetype');
         font-named-instance: 'Regular';
     }
 </style>
