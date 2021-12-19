@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/flight-record")
+@CrossOrigin(origins = "http://localhost:3000")
 public class FlightRecordController {
     @Autowired
     private FlightRecordRepository flightRecordRepository;
