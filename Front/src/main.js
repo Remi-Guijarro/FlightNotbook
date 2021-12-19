@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createApp, reactive } from 'vue'
 import { createHead } from '@vueuse/head'
 import generatedRoutes from 'virtual:generated-pages'
 import router from './router'
