@@ -4,10 +4,12 @@ specifiers:
   '@headlessui/vue': ^1.2.0
   '@heroicons/vue': ^1.0.1
   '@supabase/supabase-js': ^1.28.5
+  '@types/axios': ^0.14.0
   '@vitejs/plugin-vue': ^1.2.2
   '@vue/compiler-sfc': ^3.0.11
   '@vueuse/head': ^0.5.1
   autoprefixer: ^10.2.5
+  axios: ^0.24.0
   postcss: ^8.2.15
   tailwindcss: ^2.1.2
   vite: ^2.3.3
@@ -22,6 +24,7 @@ dependencies:
   '@headlessui/vue': 1.3.0_vue@3.0.11
   '@heroicons/vue': 1.0.1_vue@3.0.11
   '@supabase/supabase-js': 1.28.5
+  '@types/axios': 0.14.0
   '@vueuse/head': 0.5.1_vue@3.0.11
   vue: 3.0.11
   vue-router: 4.0.10_vue@3.0.11
@@ -30,6 +33,7 @@ devDependencies:
   '@vitejs/plugin-vue': 1.2.2_@vue+compiler-sfc@3.0.11
   '@vue/compiler-sfc': 3.0.11_vue@3.0.11
   autoprefixer: 10.2.5_postcss@8.2.15
+  axios: 0.24.0
   postcss: 8.2.15
   tailwindcss: 2.1.2_797cfc3ceddb49f111b184f6879a433f
   vite: 2.3.3
@@ -139,6 +143,15 @@ packages:
       '@supabase/postgrest-js': 0.35.0
       '@supabase/realtime-js': 1.3.3
       '@supabase/storage-js': 1.5.0
+    dev: false
+
+  /@types/axios/0.14.0:
+    resolution: {integrity: sha1-7CMA++fX3d1+udOr+HmZlkyvzkY=}
+    deprecated: This is a stub types definition for axios (https://github.com/mzabriskie/axios). axios provides its own type definitions, so you don't need @types/axios installed!
+    dependencies:
+      axios: 0.24.0
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   /@types/glob/7.1.3:
@@ -376,6 +389,13 @@ packages:
     dependencies:
       array.prototype.filter: 1.0.0
     dev: true
+
+  /axios/0.24.0:
+    resolution: {integrity: sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==}
+    dependencies:
+      follow-redirects: 1.14.6
+    transitivePeerDependencies:
+      - debug
 
   /balanced-match/1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -1311,6 +1331,15 @@ packages:
     dependencies:
       semver-regex: 2.0.0
     dev: true
+
+  /follow-redirects/1.14.6:
+    resolution: {integrity: sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
 
   /foreach/2.0.5:
     resolution: {integrity: sha1-C+4AUBiusmDQo6865ljdATbsG5k=}
