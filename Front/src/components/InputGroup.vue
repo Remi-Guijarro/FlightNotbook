@@ -18,6 +18,8 @@
                 border-saphire
                 lg:w-1/3 lg:m-auto lg:my-6
             "
+            :value="props.inputValue"
+            :readonly="props.readonly"
         />
     </div>
 </template>
@@ -27,6 +29,8 @@
     const props = defineProps({
         label: String,
         inputType: String,
+        inputValue: String,
+        readonly: String,
     })
 
     console.log(props.inputType)

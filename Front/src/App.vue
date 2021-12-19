@@ -1,5 +1,5 @@
 <template>
-    <router-view class="h-screen lg:h-screen"></router-view>
+    <router-view></router-view>
 </template>
 
 <style>
