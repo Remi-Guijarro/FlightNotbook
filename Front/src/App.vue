@@ -1,6 +1,18 @@
 <template>
-    <router-view></router-view>
+    <div>
+        <router-view></router-view>
+        <NavBar class="fixed bottom-0 w-full p-3 lg:fixed" />
+    </div>
 </template>
+
+<script>
+    import { NavBar } from '/src/components'
+    export default {
+        components: {
+            NavBar,
+        },
+    }
+</script>
 
 <style>
     @font-face {

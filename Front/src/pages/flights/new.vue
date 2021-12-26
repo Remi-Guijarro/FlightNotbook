@@ -88,12 +88,11 @@
                 Validate
             </button>
         </div>
-        <NavBar class="fixed bottom-0 w-full p-3 lg:fixed" />
     </div>
 </template>
 
 <script setup>
-    import { NavBar, InputGroup } from '/src/components'
+    import { InputGroup } from '/src/components'
     import '../../services/DatabaseService'
 
     const directive = {
