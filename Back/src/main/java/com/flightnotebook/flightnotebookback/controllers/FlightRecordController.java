@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/flight-record")
-@CrossOrigin(origins = "http://localhost:3001")
+@CrossOrigin(origins = {"http://localhost:3000", "http://192.168.1.30:3000", "http://192.168.1.32:3000", "*"})
 public class FlightRecordController {
     @Autowired
     private FlightRecordRepository flightRecordRepository;

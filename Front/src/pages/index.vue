@@ -85,7 +85,7 @@
             function getAllFlightRecord() {
                 // http://localhost:9090/api/flight-record
                 axios
-                    .get('http://localhost:9090/api/flight-record')
+                    .get('http://192.168.1.30:9090/api/flight-record')
                     .then((response, error) => {
                         state.flights = response.data
                         console.log(state.flights)
